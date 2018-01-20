@@ -3,9 +3,12 @@ import turtle
 def draw_square():
     #Creating a new turtle called Jobervaldo. I already love him <3
     jobervaldo = turtle.Turtle()
+    jobervaldo.shape("turtle")
+    jobervaldo.color("#FFCE60")
+    jobervaldo.speed(1)
     #Creating a runway for Jobervalto to parede
     runway = turtle.Screen()
-    runway.bgcolor("red")
+    runway.bgcolor("#21897E")
 
     #Print has to be separated because it's not possible to concatenate the string with a Vec2D object
     print("Jobervaldo started walking in the position: ")
