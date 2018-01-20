@@ -20,6 +20,12 @@ def draw_square():
         print("Jobervaldo is now in the position: ")
         print(jobervaldo.position())
 
+    #Creating a second turtle
+    josercleia = turtle.Turtle()
+    josercleia.shape("turtle")
+    josercleia.color("#EF767A")
+    josercleia.circle(100)
+
     runway.exitonclick()
 
 draw_square()
