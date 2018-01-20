@@ -19,6 +19,15 @@ def draw_circle():
     josercleia.color("#EF767A")
     josercleia.circle(100)
 
+def draw_triangle():
+    clarisvaldo = turtle.Turtle()
+    clarisvaldo.shape("turtle")
+    clarisvaldo.color("#F79F79")
+    for vertices in range (0,3):
+        clarisvaldo.right(120)
+        clarisvaldo.forward(60)
+
+
 #Calling functions together
 def runway():
     #Creating a runway
@@ -27,6 +36,7 @@ def runway():
 
     draw_square()
     draw_circle()
+    draw_triangle()
 
     runway.exitonclick()
 
