@@ -1,16 +1,10 @@
 import turtle
 
-def draw_square():
-    #Creating a new turtle called Jobervaldo. I already love him <3
-    jobervaldo = turtle.Turtle()
-    jobervaldo.shape("turtle")
-    jobervaldo.color("#FFCE60")
-    jobervaldo.speed(1)
-
+def draw_square(some_turtle):
     #Creating a Square
     for vertices in range (0,4):
-        jobervaldo.forward(100)
-        jobervaldo.right(90)
+        some_turtle.forward(100)
+        some_turtle.right(90)
 
 def draw_circle():
     # Creating a second turtle
@@ -34,9 +28,15 @@ def runway():
     runway = turtle.Screen()
     runway.bgcolor("#21897E")
 
-    draw_square()
-    draw_circle()
-    draw_triangle()
+    # Creating a new turtle called Jobervaldo. I already love him <3
+    jobervaldo = turtle.Turtle()
+    jobervaldo.shape("turtle")
+    jobervaldo.color("#FFCE60")
+    jobervaldo.speed(5)
+
+    for squares in range(0, 36):
+        draw_square(jobervaldo)
+        jobervaldo.right(10)
 
     runway.exitonclick()
 
